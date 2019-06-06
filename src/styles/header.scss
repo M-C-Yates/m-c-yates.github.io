@@ -1,0 +1,36 @@
+.header {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+  &__nav {
+    display: flex;
+  }
+
+  &__link {
+    &:hover {
+      border-bottom: 1px solid var(--font-primary);
+    }
+
+    font-size: var(--font-size);
+    color: var(--font-primary, rgb(27, 27, 27));
+    margin: 0 1rem;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+}
+
+@include respond(tab) {
+  .header {
+    &__link {
+      margin: 0;
+      padding: 0.25rem 1rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+:root {
+  --display-max: 1600px;
+  --display-min: 320px;
+
+  --backgroung-primary: #fff;
+  // --background-primary: rgb(40, 40, 40);
+  --font-primary: #101111;
+  // --font-primary: #f4f8fc;
+
+  --font-max: 1.8rem;
+  --font-min: 1.2rem;
+
+  --font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+}

@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import "abstract/mixins";
+@import "./variables.scss";
+@import "./layout.scss";
+@import "./header.scss";
+@import "./index.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  border: 1px solid transparent;
+  text-decoration: none;
+  list-style: none;
+}
+
+*:focus {
+  border: 1px solid #102a43;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-size);
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  color: var(--font-primary);
+  background-color: var(--background-primary);
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
