@@ -4,9 +4,11 @@ import Layout from "../components/layout"
 const AboutPage = () => {
   return (
     <Layout>
-      <main>
-        <h1>About me</h1>
-        <p>I'm a full-stack developer living in Lynchburg, va.</p>
+      <main className="about">
+        <h1 className="about__title">About me</h1>
+        <p className="about__text">
+          I'm a full-stack developer living in Lynchburg, va.
+        </p>
       </main>
     </Layout>
   )

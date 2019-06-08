@@ -1,0 +1,16 @@
+.about {
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  justify-items: center;
+  grid-template-areas:
+    ". title ."
+    ". text  .";
+
+  &__title {
+    grid-area: title;
+  }
+  &__text {
+    grid-area: text;
+  }
+}

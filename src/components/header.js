@@ -1,25 +1,70 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 
+import favicon16 from "../../static/favicon-16x16.png"
+import favicon32 from "../../static/favicon-32x32.png"
+import favicon64 from "../../static/favicon.ico"
+
 const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+  const title = data.site.siteMetadata.title
   return (
     <header className="header">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Matthew Yates portfolio</title>
-      </Helmet>
+      <Helmet
+        title={title}
+        meta={[{ name: "charSet", content: "utf-8" }]}
+        link={[
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "16x16",
+            href: `${favicon16}`,
+          },
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            href: `${favicon32}`,
+          },
+          { rel: "shortcut icon", type: "image/png", href: `${favicon64}` },
+        ]}
+      />
       <nav role="navigation" className="header__nav">
-        <Link className="header__link" to="/">
+        <Link
+          className="header__link"
+          activeClassName="header__link__active"
+          to="/"
+        >
           Home
         </Link>
-        <Link className="header__link" to="/about">
+        <Link
+          className="header__link"
+          activeClassName="header__link__active"
+          to="/about"
+        >
           About
         </Link>
-        <Link className="header__link" to="/blog">
+        <Link
+          className="header__link"
+          activeClassName="header__link__active"
+          to="/blog"
+        >
           Blog
         </Link>
-        <Link className="header__link" to="/contact">
+        <Link
+          className="header__link"
+          activeClassName="header__link__active"
+          to="/contact"
+        >
           Contact
         </Link>
       </nav>

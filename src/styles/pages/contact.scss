@@ -1,0 +1,27 @@
+.contact {
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  justify-items: center;
+  grid-template-areas: ". info .";
+
+  &__info {
+    grid-area: info;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-areas:
+      ". title ."
+      ". email ."
+      ". phone .";
+    &__title {
+      grid-area: title;
+    }
+    &__email {
+      grid-area: email;
+    }
+    &__phone {
+      grid-area: phone;
+    }
+  }
+}

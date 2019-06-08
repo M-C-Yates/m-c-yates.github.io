@@ -4,12 +4,17 @@
   display: flex;
   justify-content: center;
   padding: 0 2rem;
+  margin-bottom: 2rem;
   &__nav {
     display: flex;
   }
 
   &__link {
     &:hover {
+      border-bottom: 1px solid var(--font-primary);
+    }
+
+    &__active {
       border-bottom: 1px solid var(--font-primary);
     }
 

@@ -4,10 +4,12 @@ import Layout from "../components/layout"
 const ContactPage = () => {
   return (
     <Layout>
-      <main>
-        <h1>Contact me</h1>
-        <p>Mat.c.yates@gmail.com</p>
-        <p>phone # here later</p>
+      <main className="contact">
+        <div className="contact__info">
+          <h1 className="contact__info__title">Contact me</h1>
+          <p className="contact__info__email">Mat.c.yates@gmail.com</p>
+          <p className="contact__info__phone">phone # here later</p>
+        </div>
       </main>
     </Layout>
   )
