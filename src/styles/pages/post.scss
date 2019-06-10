@@ -1,0 +1,21 @@
+.post {
+  margin: 0 1rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  grid-template-areas:
+    " . title title title ."
+    " . . date . ."
+    " . postBody postBody postBody .";
+  &__title {
+    grid-area: title;
+    font-size: 5rem;
+  }
+  &__date {
+    grid-area: date;
+  }
+  &__body {
+    grid-area: postBody;
+    max-width: 100rem;
+  }
+}
