@@ -3,4 +3,25 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
   justify-items: center;
+
+  &__posts {
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    a {
+      &:hover {
+        border-bottom: 1px solid var(--font-primary);
+      }
+      padding: 1rem 0;
+      color: var(--font-primary);
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+    }
+  }
 }

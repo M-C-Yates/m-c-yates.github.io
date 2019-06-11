@@ -30,7 +30,7 @@ const BlogPage = () => {
           <h1 className="blog__info__title">Blog</h1>
           <p className="blog__info__text">Posts will be here later</p>
         </div>
-        <div>
+        <div className="blog__posts">
           {posts.map((edge, index) => {
             const post = edge.node.frontmatter
             return (

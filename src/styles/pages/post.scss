@@ -17,5 +17,10 @@
   &__body {
     grid-area: postBody;
     max-width: 100rem;
+
+    img {
+      max-width: 75rem;
+      height: auto;
+    }
   }
 }
