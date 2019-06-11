@@ -3,13 +3,25 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border: none;
 
   width: 100vw;
   max-width: 100%;
   min-height: 100vh;
   margin: 0 auto;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
 }
 
 .content {
+  max-width: 100%;
+  border: none;
   flex-grow: 1;
+  &:focus {
+    outline: none;
+    border: none;
+  }
 }

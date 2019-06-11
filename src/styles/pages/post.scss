@@ -1,11 +1,16 @@
 .post {
-  margin: 0 1rem;
+  // margin: 0 1rem;
+  &:focus {
+    border: none;
+  }
+  max-width: 100%;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
   grid-template-areas:
     " . title title title ."
     " . . date . ."
+    ". hero hero hero ."
     " . postBody postBody postBody .";
   &__title {
     grid-area: title;
@@ -14,11 +19,27 @@
   &__date {
     grid-area: date;
   }
+
+  &__hero {
+    margin: 2rem 0;
+    grid-area: hero;
+    height: auto;
+    width: 100vw;
+    max-width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
   &__body {
     grid-area: postBody;
     max-width: 100rem;
+    min-height: 40rem;
+    margin-bottom: 10rem;
 
-    img {
+    &__img {
       max-width: 75rem;
       height: auto;
     }

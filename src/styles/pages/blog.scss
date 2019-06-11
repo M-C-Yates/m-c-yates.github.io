@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: var(--font-primary);
 
     a {
       &:hover {
@@ -23,5 +24,18 @@
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
     }
+  }
+
+  &__title {
+    color: var(--font-primary);
+  }
+
+  &__date {
+    color: var(--font-primary);
+  }
+
+  &__img {
+    max-width: 75rem;
+    height: auto;
   }
 }

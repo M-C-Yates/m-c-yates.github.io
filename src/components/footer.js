@@ -13,7 +13,7 @@ const Footer = () => {
   `)
   const author = data.site.siteMetadata.author
   return (
-    <footer>
+    <footer className="footer">
       <p>
         Created by {author}, &copy; {new Date().getFullYear()}
       </p>
