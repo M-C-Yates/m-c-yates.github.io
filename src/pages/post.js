@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 import Layout from "../components/layout"
 // export const query = graphql`
 //   query($slug: String!) {
@@ -19,9 +19,9 @@ export const Post = props => {
   return (
     <Layout>
       <article className="post">
-        <h2 className="post__title" />
-        <h4 className="post__date" />
-        <div className="post__body" />
+        <h2 className="post__title">Blog</h2>
+        <h4 className="post__date">a date</h4>
+        <div className="post__body">blogs here</div>
       </article>
     </Layout>
   )

@@ -10,6 +10,8 @@ module.exports = {
     author: "Matthew Yates",
   },
   plugins: [
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
