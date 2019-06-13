@@ -1,0 +1,16 @@
+@import "./info.scss";
+@import "./header.scss";
+@import "./skills.scss";
+@import "./projects.scss";
+
+.home {
+  margin: 0rem 1rem 0 1rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  grid-template-areas:
+    "header header header header header"
+    "header header header header header"
+    ". skills skills skills ."
+    ". projects projects projects .";
+}

@@ -6,7 +6,7 @@ import favicon16 from "../../static/favicon-16x16.png"
 import favicon32 from "../../static/favicon-32x32.png"
 import favicon64 from "../../static/favicon.ico"
 
-const Header = () => {
+const Navbar = () => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -42,34 +42,20 @@ const Header = () => {
         <Link
           className="header__link"
           activeClassName="header__link__active"
-          to="/"
+          to="/index/Index"
         >
           Home
         </Link>
         <Link
           className="header__link"
           activeClassName="header__link__active"
-          to="/about"
-        >
-          About
-        </Link>
-        <Link
-          className="header__link"
-          activeClassName="header__link__active"
-          to="/blog"
+          to="/Blog"
         >
           Blog
-        </Link>
-        <Link
-          className="header__link"
-          activeClassName="header__link__active"
-          to="/contact"
-        >
-          Contact
         </Link>
       </nav>
     </header>
   )
 }
 
-export default Header
+export default Navbar

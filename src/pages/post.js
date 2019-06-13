@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 export const query = graphql`
   query($slug: String!) {
@@ -26,10 +26,9 @@ export const Post = props => {
   const options = {
     renderNode: {
       "embedded-asset-block": node => {
-        console.log(node.data.target)
         const alt = node.data.target.fields.title["en-US"]
         const url = node.data.target.fields.file["en-US"].url
-        return <img className="post__Body_img" alt={alt} src={url} />
+        return <img className="post__body_img" alt={alt} src={url} />
       },
     },
   }
