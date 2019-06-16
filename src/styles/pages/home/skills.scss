@@ -1,4 +1,5 @@
 .home__skills {
+  margin-top: 10rem;
   grid-area: skills;
   width: 100%;
   display: flex;
@@ -6,48 +7,14 @@
   align-items: center;
   margin-bottom: 10rem;
 
-  &__frontend {
-    height: 100%;
-    width: 40rem;
-    grid-area: frontend;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--card-background);
-    box-shadow: var(--boxshadow);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-  }
-
-  &__js {
-    height: 100%;
-    width: 40rem;
-    grid-area: js;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--card-background);
-    box-shadow: var(--boxshadow);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-  }
-
-  &__tools {
+  &__card {
     height: 100%;
     width: 40rem;
     grid-area: tools;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     background-color: var(--card-background);
     box-shadow: var(--boxshadow);
     border-radius: 5px;
@@ -55,5 +22,15 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+  }
+}
+
+@include respond(tab) {
+  .home__skills {
+    flex-direction: column;
+
+    &__card {
+      margin: 1rem 0;
+    }
   }
 }

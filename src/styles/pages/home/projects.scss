@@ -1,4 +1,111 @@
-.home__projects {
+.projects {
+  margin: 10rem 0;
   grid-area: projects;
-  height: 100rem;
+  min-height: 100rem;
+  display: flex;
+  flex-direction: column;
+
+  &__card {
+    width: 100%;
+    max-height: 50rem;
+    max-width: 300rem;
+
+    margin: 2rem 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    grid-template-areas:
+      "link . title . img"
+      "stack description description . img"
+      "stack description description . img"
+      "stack description description . img";
+
+    background-color: var(--card-background);
+    box-shadow: var(--boxshadow);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    &__title {
+      grid-area: title;
+    }
+
+    &__img {
+      grid-area: img;
+      width: 100%;
+      height: 100%;
+      box-shadow: var(--boxshadow);
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+    &__stack {
+      grid-area: stack;
+    }
+
+    &__description {
+      grid-area: description;
+    }
+
+    &__link {
+      grid-area: link;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@include respond(tab) {
+  .projects {
+    margin: 10rem 0;
+    grid-area: projects;
+    align-items: center;
+
+    &__card {
+      width: 100vw;
+      max-width: 80vw;
+
+      margin: 2rem 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "title"
+        "img"
+        "stack"
+        "description"
+        "link";
+      &__title {
+        grid-area: title;
+        width: 100%;
+      }
+
+      &__img {
+        width: 100%;
+        max-height: 10rem;
+
+        grid-area: img;
+      }
+
+      &__stack {
+        width: 100%;
+
+        grid-area: stack;
+      }
+
+      &__description {
+        width: 100%;
+        grid-area: description;
+      }
+
+      &__link {
+        width: 100%;
+        grid-area: link;
+      }
+    }
+  }
 }

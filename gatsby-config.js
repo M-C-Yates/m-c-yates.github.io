@@ -6,7 +6,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 75,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-image`,
     {
@@ -35,7 +42,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "src",
-        path: `${__dirname}/src/`,
+        path: `${__dirname}/static/images`,
       },
     },
   ],

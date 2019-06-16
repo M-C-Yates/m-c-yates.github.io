@@ -26,22 +26,23 @@ const BlogPage = () => {
     <Layout>
       <main className="blog">
         <div className="blog__info">
-          <h1 className="blog__info__title">Blog</h1>
-          <p className="blog__info__text">Posts will be here later</p>
+          <h1 className="blog__info__title">Blog archive</h1>
         </div>
-        <div>
+        <div className="blog__posts">
           {posts.map((edge, index) => {
             let post = edge.node
             return (
-              <Link to={`/blog/${post.slug}`} key={index}>
-                <h2 className="blog__title">{post.title}</h2>
-                <p className="blog__date">{post.date}</p>
-                <img
-                  className="blog__img"
-                  src={post.hero.file.url}
-                  alt="post hero"
-                />
-              </Link>
+              <div className="blog__post">
+                <Link to={`/blog/${post.slug}`} key={index}>
+                  <h2 className="blog__title">{post.title}</h2>
+                  <p className="blog__date">{post.date}</p>
+                  <img
+                    className="blog__img"
+                    src={post.hero.file.url}
+                    alt="post hero"
+                  />
+                </Link>
+              </div>
             )
           })}
         </div>
