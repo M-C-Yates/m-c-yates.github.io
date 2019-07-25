@@ -12,7 +12,7 @@ export const Skills = () => (
       <p>JS</p>
       <p>Graphql</p>
       <p>React</p>
-      <p>Gatsby</p>
+      <p>SSR(Gatsby)</p>
       <p>Node</p>
     </div>
     <div className="home__skills__card">

@@ -8,17 +8,17 @@
   &__card {
     width: 100%;
     max-height: 50rem;
-    max-width: 300rem;
+    max-width: 150rem;
 
     margin: 2rem 0;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(5, minmax(min-content, 1fr));
     grid-template-areas:
-      "link . title . img"
-      "stack description description . img"
-      "stack description description . img"
-      "stack description description . img";
+      "link . title img img"
+      "stack description description img img"
+      "stack description description img img"
+      "stack description description img img";
 
     background-color: var(--card-background);
     box-shadow: var(--boxshadow);
