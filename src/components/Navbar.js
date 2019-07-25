@@ -46,13 +46,6 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <Link
-          className="header__link"
-          activeClassName="header__link__active"
-          to="/Blog"
-        >
-          Blog
-        </Link>
       </nav>
     </header>
   )
