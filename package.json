@@ -10,7 +10,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "gatsby": "^2.13.41",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "env-cmd": "^9.0.3",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.17.1"
   },
   "repository": {
