@@ -46,7 +46,7 @@ export const Projects = () => {
           using Postgres.
         </p>
         <div className="projects__card__link">
-          <a href="">View Site</a>
+          <a href="https://www.mattcyates.com">View Site</a>
           <a href="https://github.com/M-C-Yates/WallWander-frontend">
             Frontend Code
           </a>
