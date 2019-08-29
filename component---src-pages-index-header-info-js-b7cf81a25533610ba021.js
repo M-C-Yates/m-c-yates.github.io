@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{192:function(e,n,a){"use strict";a.r(n),a.d(n,"Info",function(){return c});var t=a(0),o=a.n(t),c=function(){return o.a.createElement("div",{className:"home__info"},o.a.createElement("h1",{className:"home__info__title"},"Hello!"),o.a.createElement("h2",{className:"home__info__subtitle"},"I'm a developer in Lynchburg, Va"))};n.default=c}}]);
+//# sourceMappingURL=component---src-pages-index-header-info-js-b7cf81a25533610ba021.js.map
