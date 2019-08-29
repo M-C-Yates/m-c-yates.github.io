@@ -1,20 +1,22 @@
 .home__info {
-  z-index: 2;
+  display: grid;
+  grid-area: info;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-areas: "subtitle";
+  align-items: center;
+  text-align: center;
+
   width: 100%;
   height: 100%;
-  text-align: center;
-  grid-area: info;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-template-areas:
-    ". title ."
-    ". subtitle .";
+  padding: 1rem;
 
-  &__title {
-    grid-area: title;
-  }
-  &__subtitle {
-    grid-area: subtitle;
-  }
+  background-color: var(--background-primary-darker);
+  color: var(--font-secondary);
+  z-index: 2;
+
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }

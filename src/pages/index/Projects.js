@@ -81,7 +81,6 @@ export const Projects = () => {
             Prisma.
           </p>
           <div className="projects__card__link">
-            <a href="https://mattcyates.com">View Site</a>
             <a href="https://github.com/M-C-Yates/bnb-frontend">
               Frontend Code
             </a>

@@ -2,6 +2,8 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 
+import { withPrefix } from "gatsby"
+
 import favicon16 from "../../static/favicon-16x16.png"
 import favicon32 from "../../static/favicon-32x32.png"
 import favicon64 from "../../static/favicon.ico"
@@ -46,6 +48,10 @@ const Navbar = () => {
         >
           Home
         </Link>
+
+        <a className="header__link" href={withPrefix("/resume.pdf")}>
+          Resume
+        </a>
       </nav>
     </header>
   )
