@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{192:function(e,n,t){"use strict";t.r(n),t.d(n,"Info",function(){return c});var a=t(0),o=t.n(a),c=function(){return o.a.createElement("div",{className:"home__info"},o.a.createElement("h2",null,"Fullstack developer"))};n.default=c}}]);
+//# sourceMappingURL=component---src-pages-index-header-info-js-0934ba182afa1d18ca9b.js.map
