@@ -19,6 +19,9 @@ html {
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
   box-sizing: border-box;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {

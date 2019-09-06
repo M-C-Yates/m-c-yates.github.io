@@ -1,8 +1,8 @@
 .home__info {
-  display: grid;
   grid-area: info;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-template-areas: "subtitle";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
 
@@ -19,4 +19,12 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+@include respond(phone) {
+  .home__info {
+    font-size: 1.8rem;
+    height: 20rem;
+    width: 60vw;
+  }
 }
