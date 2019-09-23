@@ -7,6 +7,7 @@ import { withPrefix } from "gatsby"
 import favicon16 from "../../static/favicon-16x16.png"
 import favicon32 from "../../static/favicon-32x32.png"
 import favicon64 from "../../static/favicon.ico"
+imp
 
 const Navbar = () => {
   const data = useStaticQuery(graphql`
@@ -49,7 +50,7 @@ const Navbar = () => {
           Home
         </Link>
 
-        <a className="header__link" href={withPrefix("/resume.pdf")}>
+        <a className="header__link" href={withPrefix("/static/resume.pdf")}>
           Resume
         </a>
       </nav>
